@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "django_crud_api"
+version = "0.1.0"
+description = "REST API"
+authors = ["Claudio Parra M. <clmaldonadop@gmail.com>"]
+#readme = "README.md"
+packages = [{include = "django_crud_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Django = "^5.0.6"
+djangorestframework = "^3.15.1"
+ptvsd = "^4.3.2"
+django-cors-headers = "^4.3.1"
+coreapi = "^2.3.3"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4"
+pytest = "^6.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
